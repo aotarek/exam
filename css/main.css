@@ -1,0 +1,120 @@
+/* init  */
+
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+tr {
+  height: 40px;
+}
+
+/*body*/
+body {
+  background: #f4f8f9;
+}
+
+/* main */
+.main {
+  border-top: #4da1ff solid 4px;
+}
+
+/*container*/
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+  height: 100%;
+}
+
+/* header */
+
+.header {
+  height: 150px;
+  background: #fafbfd;
+}
+
+.title {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #4da1ff;
+}
+/* button*/
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  border: 1px solid transparent;
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 4px;
+  color: #ffffff;
+}
+.btn-danger {
+  background: #b96654;
+}
+.btn-success {
+  background: #84b954;
+}
+
+/*Posts*/
+.posts {
+  background: #ffffff;
+  padding: 20px;
+  margin-top: 50px;
+}
+.posts-title {
+  margin: 10px 0;
+}
+.posts-item-article {
+  padding: 20px;
+  border: 1px solid #cec7c7;
+  border-radius: 5px;
+}
+.posts-item-article-title {
+  width: 70%;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 5px 0px;
+  display: inline-block;
+}
+.posts-item-article-date {
+  width: 29%;
+  display: inline-block;
+  text-align: right;
+}
+.posts-item-article-button {
+  margin-top: 20px;
+}
+
+/*article liked style*/
+.posts-item-article.article-liked {
+  color: #466d3e;
+  background: #e2efdb;
+}
+
+.posts-item-article.article-disliked {
+  color: #b57983;
+  background: #efdfdf;
+}
+
+/*media query*/
+
+@media screen and (max-width: 790px) {
+  .posts-item-article-date {
+    text-align: left;
+    width: 100%;
+    margin: 5px 0px;
+  }
+  .posts-item-article-title {
+    width: 100%;
+  }
+}
